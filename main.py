@@ -14,5 +14,5 @@ def linear_regression():
         plt.title('Linear Regression Plot | Ans are {}'.format(coeffs))
         plt.show()
     except:
-        print("Your device not support GUI or don't have matplotlib!")
+        print("Your device not support GUI !")
 linear_regression()
