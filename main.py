@@ -8,9 +8,11 @@ def linear_regression():
     try:
         import matplotlib.pyplot as plt
         # plot garph
+        yLinearRegression = coeffs[0] * x + coeffs[1]
         plt.scatter(x, y)
-        plt.plot(x, coeffs[0] * x + coeffs[1], color='red')
+        plt.plot(x, yLinearRegression, color='red')
+        plt.title('Linear Regression Plot | Ans are {}'.format(coeffs))
         plt.show()
     except:
-        print("Your device not support GUI or don't have matplotlib")
+        print("Your device not support GUI or don't have matplotlib!")
 linear_regression()
